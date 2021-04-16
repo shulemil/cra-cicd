@@ -52,7 +52,7 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
+        key: ${{ secrets.ACTIONS_DEPLOY_KEY }
         port: ${{ secrets.PORT }}
         script: |
           rm -rf /usr/share/nginx/html/*
@@ -62,7 +62,7 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
+        key: ${{ secrets.ACTIONS_DEPLOY_KEY }
         port: ${{ secrets.PORT }}
         source: "build"
         target: "/usr/share/nginx/html/"
