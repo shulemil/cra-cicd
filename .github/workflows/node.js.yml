@@ -64,6 +64,6 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        source: "build/*"
+        source: "build"
         target: "/usr/share/nginx/html/"
-    
+        strip_components: 1
